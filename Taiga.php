@@ -166,8 +166,8 @@ class Taiga
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-        if (defined("CURLOPT_SSL_VERIFYPEER")) {
-            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, CURLOPT_SSL_VERIFYPEER);
+        if (defined("CURL_SSL_VERIFYPEER")) {
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, CURL_SSL_VERIFYPEER);
         }
 
         $header = array(
