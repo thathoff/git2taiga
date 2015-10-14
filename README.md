@@ -21,4 +21,4 @@ In the following steps, please replace `PROJECT_NAME` with yout Taiga project UR
 
 When a commit is merged into the master and uses the [GitLab closing pattern](http://doc.gitlab.com/ee/customization/issue_closing.html) the task is set to the first status that is marked as closed in the Taiga settings. A comment linking to the GitLab commit will be add to the item.
 
-When the status of the item is larger then the first close status this script will not change anything.
+When the current status of the item is higher then the first close status this script will not change anything.
